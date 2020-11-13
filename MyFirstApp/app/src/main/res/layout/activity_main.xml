@@ -16,6 +16,8 @@
         android:text="Login"
         android:textAllCaps="true"
         android:textSize="18sp"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="172dp" />
 
