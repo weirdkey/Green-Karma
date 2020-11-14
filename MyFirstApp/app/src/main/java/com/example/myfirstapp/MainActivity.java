@@ -29,5 +29,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        final Button login_button2 = findViewById(R.id.login_button2);
+
+        login_button2.setOnClickListener(v -> {
+            setContentView(R.layout.activity_register);
+        });
+
     }
 }
