@@ -8,30 +8,28 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/login_label"
+        android:id="@+id/register_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="168dp"
-        android:layout_marginLeft="168dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="168dp"
-        android:layout_marginRight="168dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Login"
+        android:text="Register"
         android:textAllCaps="true"
         android:textColor="#fff"
         android:textSize="18sp"
         app:layout_constrainedHeight="true"
         app:layout_constrainedWidth="true"
-        app:layout_constraintBottom_toTopOf="@+id/login_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <LinearLayout
-        android:id="@+id/login_layout"
+        android:id="@+id/register_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
@@ -39,21 +37,41 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:layout_marginBottom="150dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/register_label2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_label">
+        app:layout_constraintTop_toBottomOf="@+id/register_label">
 
         <EditText
-            android:id="@+id/login_email"
+            android:id="@+id/register_first_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Your Email"
+            android:hint="First Name"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/login_password"
+            android:id="@+id/register_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Your Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/register_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -61,13 +79,21 @@
             android:hint="Password"
             android:inputType="textPassword" />
 
-        <Button
-            android:id="@+id/login_button"
+        <EditText
+            android:id="@+id/register_repeat_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Repeat Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:background="@drawable/button"
-            android:text="Login"
+            android:text="Sign Up"
             android:textColor="#151414"
             app:backgroundTint="@color/white"
             app:cornerRadius="10dp"
@@ -76,18 +102,17 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/login_button2"
+        android:id="@+id/register_button2"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="317dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/button2"
         android:shadowColor="#fff"
-        android:text="Sign Up"
+        android:text="Login"
         android:textColor="#fff"
         android:textColorHint="#fff"
         android:textSize="18sp"
@@ -97,23 +122,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_layout"
         app:rippleColor="#fff"
         app:strokeColor="#fff" />
 
     <TextView
-        android:id="@+id/login_label2"
+        android:id="@+id/register_label2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="Not a member yet?"
+        android:layout_marginBottom="16dp"
+        android:text="Already registered?"
         android:textColor="#fff"
-        app:layout_constraintBottom_toTopOf="@+id/login_button2"
+        app:layout_constraintBottom_toTopOf="@+id/register_button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/login_facebook"
+        android:id="@+id/register_facebook"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="27dp"
@@ -121,15 +145,15 @@
         android:layout_marginTop="22dp"
         android:layout_marginEnd="27dp"
         android:layout_marginRight="27dp"
-        android:layout_marginBottom="225dp"
-        app:layout_constraintBottom_toTopOf="@+id/login_label2"
-        app:layout_constraintEnd_toStartOf="@+id/login_twitter"
-        app:layout_constraintStart_toEndOf="@+id/login_google"
-        app:layout_constraintTop_toBottomOf="@+id/login_layout"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/register_label2"
+        app:layout_constraintEnd_toStartOf="@+id/register_twitter"
+        app:layout_constraintStart_toEndOf="@+id/register_google"
+        app:layout_constraintTop_toBottomOf="@+id/register_layout"
         app:srcCompat="@drawable/facebook" />
 
     <ImageView
-        android:id="@+id/login_google"
+        android:id="@+id/register_google"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="120dp"
@@ -137,16 +161,15 @@
         android:layout_marginTop="22dp"
         android:layout_marginEnd="27dp"
         android:layout_marginRight="27dp"
-        android:layout_marginBottom="175dp"
-        app:layout_constraintBottom_toTopOf="@+id/login_label2"
-        app:layout_constraintEnd_toStartOf="@+id/login_facebook"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/register_label2"
+        app:layout_constraintEnd_toStartOf="@+id/register_facebook"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_layout"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/register_layout"
         app:srcCompat="@drawable/google" />
 
     <ImageView
-        android:id="@+id/login_twitter"
+        android:id="@+id/register_twitter"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="27dp"
@@ -154,12 +177,11 @@
         android:layout_marginTop="22dp"
         android:layout_marginEnd="120dp"
         android:layout_marginRight="120dp"
-        android:layout_marginBottom="175dp"
-        app:layout_constraintBottom_toTopOf="@+id/login_label2"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/register_label2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/login_facebook"
-        app:layout_constraintTop_toBottomOf="@+id/login_layout"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/register_facebook"
+        app:layout_constraintTop_toBottomOf="@+id/register_layout"
         app:srcCompat="@drawable/twitter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
