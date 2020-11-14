@@ -184,9 +184,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="40dp"
-        android:background="#fece2f"
-        android:backgroundTint="#01B636"
+        android:layout_marginBottom="20dp"
+        android:background="#01B636"
         android:fontFamily="@font/bungee"
         android:text="UPDATE" />
 

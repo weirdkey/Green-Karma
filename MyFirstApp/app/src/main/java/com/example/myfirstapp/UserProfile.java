@@ -11,13 +11,14 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class UserProfile extends MainActivities {
+public class UserProfile  extends MainActivities {
     private final int layoutID = R.layout.activity_profile;
 
     @Override
     int getLayoutId() {
         return layoutID;
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
