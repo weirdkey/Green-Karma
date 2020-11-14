@@ -3,7 +3,9 @@ package com.example.myfirstapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -21,7 +23,10 @@ public abstract class MainActivities extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
-
+        if(getLayoutId()==R.layout.activity_bottomlayout) {
+            TextView txt = (TextView) findViewById(R.id.rewards_label);
+            txt.setPaintFlags(txt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+        }
         menu = findViewById(R.id.bottom_nav);
 
         home_button = menu.findViewById(R.id.home);
@@ -33,6 +38,8 @@ public abstract class MainActivities extends Activity {
 
             resetButtonColors();
             v.setBackgroundColor(Color.parseColor("#74E39A"));
+            Intent switchLayout = new Intent(this, RewardsActivity.class);
+            startActivity(switchLayout);
         });
         home_button.setOnClickListener(v -> {
             resetButtonColors();

@@ -5,20 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".UserProfile">
+    tools:context=".UserProfile"
+    android:id="@+id/whole">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:padding="20dp"
-        android:background="#01B636">
+        android:layout_height="200dp"
+        android:background="#01B636"
+        android:padding="20dp">
 
 
         <ImageView
             android:id="@+id/profile_picture"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/avatar"
-            android:layout_centerVertical="true" />
+            android:layout_centerVertical="true"
+            android:src="@drawable/avatar" />
 
         <TextView
             android:id="@+id/fullname_field"
@@ -179,12 +181,23 @@
     </LinearLayout>
 
     <Button
-        android:background="#fece2f"
-        android:fontFamily="@font/bungee"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
-        android:text="UPDATE"
-        android:backgroundTint="#01B636"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="#fece2f"
+        android:backgroundTint="#01B636"
+        android:fontFamily="@font/bungee"
+        android:text="UPDATE" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="#01B636"
+        app:itemHorizontalTranslationEnabled="false"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu" />
 
 </LinearLayout>
