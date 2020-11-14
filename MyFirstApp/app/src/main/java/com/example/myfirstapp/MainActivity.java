@@ -18,8 +18,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         this.login_button = findViewById(R.id.login_button);
 
         login_button.setOnClickListener(v -> {
@@ -28,7 +26,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
             CharSequence username = tv1.getText();
             CharSequence password = tv2.getText();
             if (Verificator.verificate(username, password)) {
-                setContentView(R.layout.activity_secondary);
+                Intent switchLayout = new Intent(this, AfterLogin.class);
+                startActivity(switchLayout);
             }
         });
         this.login_button2 = findViewById(R.id.login_button2);
