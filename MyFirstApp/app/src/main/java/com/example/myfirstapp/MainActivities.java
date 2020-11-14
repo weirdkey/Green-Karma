@@ -9,17 +9,66 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public abstract class MainActivities extends Activity {
+public abstract class MainActivities extends AppCompatActivity {
     private BottomNavigationView menu;
     private BottomNavigationItemView home_button;
     private BottomNavigationItemView achievement_button;
     private BottomNavigationItemView progress_button;
     private BottomNavigationItemView profile_button;
+
+    protected String[] nameArray = {
+            "Octopus", "Pig", "Sheep", "Rabbit", "Snake", "Spider",
+            "Octopus", "Pig", "Sheep", "Rabbit", "Snake", "Spider",
+            "Octopus", "Pig", "Sheep", "Rabbit", "Snake", "Spider"};
+
+    protected String[] infoArray = {
+            "8 tentacled monster",
+            "Delicious in rolls",
+            "Great for jumpers",
+            "Nice in a stew",
+            "Great for shoes",
+            "Scary.",
+            "8 tentacled monster",
+            "Delicious in rolls",
+            "Great for jumpers",
+            "Nice in a stew",
+            "Great for shoes",
+            "Scary.",
+            "8 tentacled monster",
+            "Delicious in rolls",
+            "Great for jumpers",
+            "Nice in a stew",
+            "Great for shoes",
+            "Scary."
+    };
+
+    protected Integer[] imageArray = {
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.avatar};
 
     abstract int getLayoutId();
 
@@ -45,18 +94,10 @@ public abstract class MainActivities extends Activity {
         } else if (getLayoutId() == R.layout.activity_leaderboard) {
             resetButtonColors();
             progress_button.setBackgroundColor(Color.parseColor("#74E39A"));
+            CustomListAdapter cla = new CustomListAdapter(this, nameArray, infoArray, imageArray);
+            listView = (ListView) findViewById(R.id.activity_leadeboard);
+            listView.setAdapter(cla);
 
-            listView = findViewById(R.id.listview);
-
-            ArrayList<String> arrayList = new ArrayList<>();
-
-            for(int i = 0; i < 48; i+=2) {
-                arrayList.add("pishka");
-            }
-
-            ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
-
-            listView.setAdapter(arrayAdapter);
         }
     }
 
@@ -95,3 +136,4 @@ public abstract class MainActivities extends Activity {
         profile_button.setBackgroundColor(112182);
     }
 }
+
