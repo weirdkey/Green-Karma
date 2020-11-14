@@ -12,4 +12,4 @@
 
 **Sustainability Gamification for Smart Villages**\
 **Innovation Challenge 2020**\
-#FutureTech4Climate\
+#FutureTech4Climate
