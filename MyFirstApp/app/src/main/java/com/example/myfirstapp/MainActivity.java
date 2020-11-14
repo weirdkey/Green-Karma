@@ -1,8 +1,5 @@
 package com.example.myfirstapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintSet;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,7 +23,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             CharSequence username = tv1.getText();
             CharSequence password = tv2.getText();
             if (Verificator.verificate(username, password)) {
-                Intent switchLayout = new Intent(this, AfterLogin.class);
+                Intent switchLayout = new Intent(this, HomeActivity.class);
                 startActivity(switchLayout);
             }
         });
