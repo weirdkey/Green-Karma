@@ -10,6 +10,8 @@
 - support eco-friendly brands to expand their market
 - point of contact between customers, business and government
 
+**Slides:** https://docs.google.com/presentation/d/1_wTL0l1LgyEZtLDEpPb7PnBQugtvlgTUamQf_OOF5d0/edit#slide=id.ga20e4db91f_0_104
+
 Sustainability Gamification for Smart Villages\
 **Innovation Challenge 2020**\
 #FutureTech4Climate \
