@@ -5,10 +5,14 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
 
 public abstract class MainActivities extends Activity {
     private BottomNavigationView menu;
@@ -18,6 +22,8 @@ public abstract class MainActivities extends Activity {
     private BottomNavigationItemView profile_button;
 
     abstract int getLayoutId();
+
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +45,18 @@ public abstract class MainActivities extends Activity {
         } else if (getLayoutId() == R.layout.activity_leaderboard) {
             resetButtonColors();
             progress_button.setBackgroundColor(Color.parseColor("#74E39A"));
+
+            listView = findViewById(R.id.listview);
+
+            ArrayList<String> arrayList = new ArrayList<>();
+
+            for(int i = 0; i < 48; i+=2) {
+                arrayList.add("pishka");
+            }
+
+            ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
+
+            listView.setAdapter(arrayAdapter);
         }
     }
 
