@@ -31,7 +31,8 @@
         android:fontFamily="sans-serif-medium"
         android:text="Rewards"
         android:textAllCaps="true"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/rewards_label2"
@@ -45,7 +46,8 @@
         android:fontFamily="sans-serif-medium"
         android:text="Redeem"
         android:textAllCaps="true"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:typeface="serif" />
 
     <ImageView
         android:id="@+id/rewards_car"
@@ -128,7 +130,8 @@
         android:layout_marginTop="174dp"
         android:gravity="center"
         android:text="Driving in populated zone"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:typeface="serif" />
 
 
     <TextView
@@ -140,7 +143,8 @@
         android:layout_marginTop="364dp"
         android:gravity="center"
         android:text="Carpooling"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/textView3"
@@ -151,7 +155,8 @@
         android:layout_marginTop="174dp"
         android:gravity="center"
         android:text="5000 steps today"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/textView7"
@@ -162,7 +167,8 @@
         android:layout_marginTop="364dp"
         android:gravity="center"
         android:text="5000 steps today"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/textView8"
@@ -173,7 +179,8 @@
         android:layout_marginTop="554dp"
         android:gravity="center"
         android:text="5000 steps today"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/textView4"
@@ -186,7 +193,8 @@
         android:layout_marginRight="32dp"
         android:gravity="center"
         android:text="Recycling"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:typeface="serif" />
 
     <TextView
         android:id="@+id/textView5"
@@ -197,7 +205,8 @@
         android:layout_marginTop="364dp"
         android:gravity="center"
         android:text="Gaind 300 points for a day"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:typeface="serif" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"

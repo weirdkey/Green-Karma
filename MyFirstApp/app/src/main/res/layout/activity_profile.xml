@@ -33,24 +33,28 @@
             android:includeFontPadding="false"
             android:text="Julian Kranz"
             android:textColor="#000"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/username_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/fullname_field"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="-2dp"
             android:layout_toRightOf="@+id/profile_picture"
             android:includeFontPadding="false"
             android:text="juliank"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings" />
+            android:text="Settings"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/textView17"
@@ -58,7 +62,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="65dp"
             android:layout_marginLeft="65dp"
-            android:text="Statistics" />
+            android:text="Statistics"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/textView19"
@@ -66,7 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="140dp"
             android:layout_marginLeft="140dp"
-            android:text="Privacy" />
+            android:text="Privacy"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/textView21"
@@ -74,15 +80,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="205dp"
             android:layout_marginLeft="205dp"
-            android:text="Privacy" />
+            android:text="Privacy"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/textView18"
-            android:layout_width="wrap_content"
+            android:layout_width="45dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="265dp"
             android:layout_marginLeft="265dp"
-            android:text="About" />
+            android:text="About"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/textView20"
@@ -90,7 +98,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="320dp"
             android:layout_marginLeft="320dp"
-            android:text="Help" />
+            android:text="Help"
+            android:typeface="serif" />
     </RelativeLayout>
 
     <LinearLayout
@@ -116,7 +125,8 @@
                     android:layout_width="40dp"
                     android:layout_height="30dp"
                     android:layout_centerHorizontal="true"
-                    android:text="Daily"></TextView>
+                    android:text="Daily"
+                    android:typeface="serif"></TextView>
 
                 <TextView
                     android:id="@+id/daily"
@@ -136,7 +146,8 @@
                     android:layout_centerHorizontal="true"
                     android:includeFontPadding="false"
                     android:text=" Max Points"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:typeface="serif" />
             </RelativeLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -157,7 +168,8 @@
                     android:layout_width="50dp"
                     android:layout_height="30dp"
                     android:layout_centerHorizontal="true"
-                    android:text="Weekly"></TextView>
+                    android:text="Weekly"
+                    android:typeface="serif"></TextView>
 
                 <TextView
                     android:id="@+id/weekly"
@@ -177,7 +189,8 @@
                     android:layout_centerHorizontal="true"
                     android:includeFontPadding="false"
                     android:text="Max Points"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:typeface="serif" />
             </RelativeLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -199,7 +212,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:text="Julian Kranz">
+                android:text="Julian Kranz"
+                android:typeface="serif">
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
@@ -214,7 +228,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:text="julian.kranz@gmail.com">
+                android:text="julian.kranz@gmail.com"
+                android:typeface="serif">
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
@@ -229,7 +244,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:text="Euro 5, Volkswagen,Passat">
+                android:text="Euro 5, Volkswagen,Passat"
+                android:typeface="serif">
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
@@ -240,6 +256,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="#01B636"
         android:fontFamily="@font/bungee"
         android:padding="20dp"
@@ -251,7 +268,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="42dp"
         android:background="#01B636"
         app:itemHorizontalTranslationEnabled="false"
         app:labelVisibilityMode="unlabeled"
