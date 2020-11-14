@@ -23,13 +23,7 @@ public abstract class MainActivities extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
-        menu = findViewById(R.id.bottom_nav);
-
-
-        home_button = menu.findViewById(R.id.home);
-        achievement_button = menu.findViewById(R.id.trophy);
-        progress_button = menu.findViewById(R.id.leaderboard);
-        profile_button = menu.findViewById(R.id.user);
+        setupButtons();
 
         if (getLayoutId() == R.layout.activity_bottomlayout) {
             resetButtonColors();
@@ -42,7 +36,18 @@ public abstract class MainActivities extends Activity {
         } else if (getLayoutId() == R.layout.activity_profile) {
             resetButtonColors();
             profile_button.setBackgroundColor(Color.parseColor("#74E39A"));
+        } else if (getLayoutId() == R.layout.activity_leaderboard) {
+            resetButtonColors();
+            progress_button.setBackgroundColor(Color.parseColor("#74E39A"));
         }
+    }
+
+    private void setupButtons() {
+        menu = findViewById(R.id.bottom_nav);
+        home_button = menu.findViewById(R.id.home);
+        achievement_button = menu.findViewById(R.id.trophy);
+        progress_button = menu.findViewById(R.id.leaderboard);
+        profile_button = menu.findViewById(R.id.user);
 
         achievement_button.setOnClickListener(v -> {
             Intent switchLayout = new Intent(this, RewardsActivity.class);
