@@ -181,7 +181,7 @@
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toStartOf="@+id/textView8"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/car" />
+        android:background="@drawable/car" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -195,7 +195,7 @@
         app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/footsteps" />
+        android:background="@drawable/footsteps" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -209,7 +209,7 @@
         app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toStartOf="@+id/textView9"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bus" />
+        android:background="@drawable/bus" />
 
     <TextView
         android:id="@+id/textView5"
@@ -322,7 +322,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toStartOf="@+id/textView14"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/positive" />
+        android:background="@drawable/positive" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -336,7 +336,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView6"
         app:layout_constraintEnd_toStartOf="@+id/textView15"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/positive" />
+        android:background="@drawable/positive" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -350,7 +350,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
         app:layout_constraintEnd_toStartOf="@+id/textView16"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/neutral" />
+        android:background="@drawable/neutral" />
 
     <TextView
         android:id="@+id/textView14"
