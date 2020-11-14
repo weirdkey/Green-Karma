@@ -32,6 +32,8 @@ public class AfterLogin extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottomlayout);
+        TextView txt = (TextView) findViewById(R.id.rewards_label);
+        txt.setPaintFlags(txt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         menu = findViewById(R.id.bottom_nav);
         ColorFilter cf = new LightingColorFilter(2, 3);
         home_button = menu.findViewById(R.id.home);
