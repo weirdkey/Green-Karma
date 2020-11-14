@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="256dp"
+        android:layout_height="37dp"
+        android:text="Karma lost:   0"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="256dp"
+        android:layout_height="37dp"
+        android:text="Karma gained:   40"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:text="Daily Karma Goal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#01b636"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="224dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="710dp"
+        android:background="@drawable/progress_bar"
+        android:gravity="center"
+        android:shadowRadius="300"
+        android:text="67/100"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#e3e3e3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3e3e3"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3e3e3"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e3e3e3"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="526dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="171dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="Karma Level:    Enthusiast"
+        android:textColor="#3bd16f"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="183dp"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:text="Monthly Goal:     1235/2500"
+        android:textColor="#3bd16f"
+        tools:layout_editor_absoluteX="194dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/car"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/footsteps"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/bus"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="256dp"
+        android:layout_height="37dp"
+        android:gravity="bottom"
+        android:text="Karma Threshold:   3.42/5 km"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="201dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="256dp"
+        android:layout_height="37dp"
+        android:gravity="bottom"
+        android:text="Steps: 2729"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="256dp"
+        android:layout_height="37dp"
+        android:gravity="bottom"
+        android:text="Km traveled:   12.1km"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="256dp"
+        android:layout_height="37dp"
+        android:text="Karma gained:   27"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
