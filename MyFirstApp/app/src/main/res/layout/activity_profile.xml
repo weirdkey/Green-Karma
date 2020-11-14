@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="205dp"
                 android:layout_marginLeft="205dp"
-                android:text="Privacy"
+                android:text="Policy"
                 android:typeface="serif" />
 
             <TextView
