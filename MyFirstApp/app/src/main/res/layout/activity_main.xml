@@ -121,12 +121,10 @@
         android:layout_marginTop="22dp"
         android:layout_marginEnd="27dp"
         android:layout_marginRight="27dp"
-        android:layout_marginBottom="225dp"
-        app:layout_constraintBottom_toTopOf="@+id/login_label2"
+        android:src="@drawable/facebook"
         app:layout_constraintEnd_toStartOf="@+id/login_twitter"
         app:layout_constraintStart_toEndOf="@+id/login_google"
-        app:layout_constraintTop_toBottomOf="@+id/login_layout"
-        app:srcCompat="@drawable/facebook" />
+        app:layout_constraintTop_toBottomOf="@+id/login_layout" />
 
     <ImageView
         android:id="@+id/login_google"
@@ -143,7 +141,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_layout"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/google" />
+        android:src="@drawable/google" />
 
     <ImageView
         android:id="@+id/login_twitter"
@@ -160,6 +158,6 @@
         app:layout_constraintStart_toEndOf="@+id/login_facebook"
         app:layout_constraintTop_toBottomOf="@+id/login_layout"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/twitter" />
+        android:src="@drawable/twitter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
