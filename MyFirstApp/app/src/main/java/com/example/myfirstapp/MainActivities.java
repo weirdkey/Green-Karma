@@ -9,13 +9,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class MainActivities extends Activity {
+public abstract class MainActivities extends AppCompatActivity {
     private BottomNavigationView menu;
     private BottomNavigationItemView home_button;
     private BottomNavigationItemView achievement_button;
