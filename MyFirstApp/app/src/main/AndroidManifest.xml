@@ -17,7 +17,9 @@
         </activity>
 
         <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".AfterLogin"></activity>
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".UserProfile"></activity>
+        <activity android:name=".ProgressActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
