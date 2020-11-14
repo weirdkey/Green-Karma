@@ -23,19 +23,29 @@ public abstract class MainActivities extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
-        if(getLayoutId()==R.layout.activity_bottomlayout) {
-            TextView txt = (TextView) findViewById(R.id.rewards_label);
-            txt.setPaintFlags(txt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-        }
         menu = findViewById(R.id.bottom_nav);
+
 
         home_button = menu.findViewById(R.id.home);
         achievement_button = menu.findViewById(R.id.trophy);
         progress_button = menu.findViewById(R.id.leaderboard);
         profile_button = menu.findViewById(R.id.user);
 
-        achievement_button.setOnClickListener(v -> {
+        switch (getLayoutId()) {
+            case R.layout.activity_bottomlayout:
+                resetButtonColors();
+                achievement_button.setBackgroundColor(Color.parseColor("#74E39A"));
+                TextView txt = (TextView) findViewById(R.id.rewards_label);
+                txt.setPaintFlags(txt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+            case R.layout.activity_home:
+                resetButtonColors();
+                home_button.setBackgroundColor(Color.parseColor("#74E39A"));
+            case R.layout.activity_profile:
+                resetButtonColors();
+                profile_button.setBackgroundColor(Color.parseColor("#74E39A"));
+        }
 
+        achievement_button.setOnClickListener(v -> {
             resetButtonColors();
             v.setBackgroundColor(Color.parseColor("#74E39A"));
             Intent switchLayout = new Intent(this, RewardsActivity.class);
@@ -44,6 +54,9 @@ public abstract class MainActivities extends Activity {
         home_button.setOnClickListener(v -> {
             resetButtonColors();
             v.setBackgroundColor(Color.parseColor("#74E39A"));
+
+            Intent switchLayout = new Intent(this, HomeActivity.class);
+            startActivity(switchLayout);
         });
 
         progress_button.setOnClickListener(v -> {

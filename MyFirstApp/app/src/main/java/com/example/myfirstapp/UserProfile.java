@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class UserProfile  extends MainActivities {
     private final int layoutID = R.layout.activity_profile;
 
-
     @Override
     int getLayoutId() {
         return layoutID;
@@ -26,9 +25,10 @@ public class UserProfile  extends MainActivities {
         getMenuInflater().inflate(R.menu.profilemenu, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Toast.makeText(this, "Selected Item: " +item.getTitle(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Selected Item: " + item.getTitle(), Toast.LENGTH_SHORT).show();
         switch (item.getItemId()) {
             case R.id.about:
                 // do your code
