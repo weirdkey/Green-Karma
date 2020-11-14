@@ -23,53 +23,48 @@ public abstract class MainActivities extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
+        setupButtons();
+
+        if (getLayoutId() == R.layout.activity_bottomlayout) {
+            resetButtonColors();
+            achievement_button.setBackgroundColor(Color.parseColor("#74E39A"));
+            TextView txt = (TextView) findViewById(R.id.rewards_label);
+            txt.setPaintFlags(txt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+        } else if (getLayoutId() == R.layout.activity_home) {
+            resetButtonColors();
+            home_button.setBackgroundColor(Color.parseColor("#74E39A"));
+        } else if (getLayoutId() == R.layout.activity_profile) {
+            resetButtonColors();
+            profile_button.setBackgroundColor(Color.parseColor("#74E39A"));
+        } else if (getLayoutId() == R.layout.activity_leaderboard) {
+            resetButtonColors();
+            progress_button.setBackgroundColor(Color.parseColor("#74E39A"));
+        }
+    }
+
+    private void setupButtons() {
         menu = findViewById(R.id.bottom_nav);
-
-
         home_button = menu.findViewById(R.id.home);
         achievement_button = menu.findViewById(R.id.trophy);
         progress_button = menu.findViewById(R.id.leaderboard);
         profile_button = menu.findViewById(R.id.user);
 
-        switch (getLayoutId()) {
-            case R.layout.activity_bottomlayout:
-                resetButtonColors();
-                achievement_button.setBackgroundColor(Color.parseColor("#74E39A"));
-                TextView txt = (TextView) findViewById(R.id.rewards_label);
-                txt.setPaintFlags(txt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-            case R.layout.activity_home:
-                resetButtonColors();
-                home_button.setBackgroundColor(Color.parseColor("#74E39A"));
-            case R.layout.activity_profile:
-                resetButtonColors();
-                profile_button.setBackgroundColor(Color.parseColor("#74E39A"));
-        }
-
         achievement_button.setOnClickListener(v -> {
-            resetButtonColors();
-            v.setBackgroundColor(Color.parseColor("#74E39A"));
             Intent switchLayout = new Intent(this, RewardsActivity.class);
             startActivity(switchLayout);
         });
-        home_button.setOnClickListener(v -> {
-            resetButtonColors();
-            v.setBackgroundColor(Color.parseColor("#74E39A"));
 
+        home_button.setOnClickListener(v -> {
             Intent switchLayout = new Intent(this, HomeActivity.class);
             startActivity(switchLayout);
         });
 
         progress_button.setOnClickListener(v -> {
-            resetButtonColors();
-            v.setBackgroundColor(Color.parseColor("#74E39A"));
-
             Intent switchLayout = new Intent(this, ProgressActivity.class);
             startActivity(switchLayout);
         });
-        profile_button.setOnClickListener(v -> {
-            resetButtonColors();
-            v.setBackgroundColor(Color.parseColor("#74E39A"));
 
+        profile_button.setOnClickListener(v -> {
             Intent switchLayout = new Intent(this, UserProfile.class);
             startActivity(switchLayout);
         });
