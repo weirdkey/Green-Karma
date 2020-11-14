@@ -10,6 +10,7 @@
 - support eco-friendly brands to expand their market
 - point of contact between customers, business and government
 
-Sustainability Gamification for Smart Villages
-Innovation Challenge 2020
-#FutureTech4Climate
+Sustainability Gamification for Smart Villages\
+**Innovation Challenge 2020**\
+#FutureTech4Climate \
+https://code-bavaria.de/innovation-challenge
