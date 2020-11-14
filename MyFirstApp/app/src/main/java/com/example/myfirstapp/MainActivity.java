@@ -1,6 +1,7 @@
 package com.example.myfirstapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintSet;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -30,19 +31,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 setContentView(R.layout.activity_secondary);
             }
         });
-
         this.login_button2 = findViewById(R.id.login_button2);
         login_button2.setOnClickListener(this);
-
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.login_button:
+            case R.id.login_button2:
                 Intent switchLayout = new Intent(this, RegisterActivity.class);
                 startActivity(switchLayout);
         }
     }
-
 }

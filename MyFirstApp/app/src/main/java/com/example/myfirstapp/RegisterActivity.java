@@ -14,7 +14,6 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
         register_button = findViewById(R.id.register_button);
         register_button.setOnClickListener(v -> {
 
@@ -27,7 +26,7 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.login_button:
+            case R.id.register_button2:
                 Intent switchLayout = new Intent(this, MainActivity.class);
                 startActivity(switchLayout);
         }
