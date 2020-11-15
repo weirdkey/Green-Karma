@@ -30,7 +30,7 @@
         android:layout_marginEnd="117dp"
         android:layout_marginRight="117dp"
         android:layout_marginBottom="29dp"
-        android:text="Leaderboard"
+        android:text="Weekly Leaderboard"
         android:textColor="#01b636"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -42,14 +42,14 @@
 
     <ListView
         android:id="@+id/activity_leadeboard"
-        android:layout_width="395dp"
-        android:layout_height="656dp"
+        android:layout_width="393dp"
+        android:layout_height="661dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629" />
+        app:layout_constraintVertical_bias="0.568" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

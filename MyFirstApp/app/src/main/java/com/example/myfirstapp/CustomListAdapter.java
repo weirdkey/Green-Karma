@@ -28,9 +28,9 @@ public class CustomListAdapter extends ArrayAdapter {
 
         for (int i = 0; i < nameArrayParam.length; i++) {
             if (i == 2)
-                nameArrayParam[i] = "3. Julian Kranz";
+                nameArrayParam[i] = "  3. Julian Kranz";
             else
-                nameArrayParam[i] = "" + (i + 1) + ". " + nameArrayParam[i];
+                nameArrayParam[i] = "  " + (i + 1) + ". " + nameArrayParam[i];
         }
 
         this.context = context;

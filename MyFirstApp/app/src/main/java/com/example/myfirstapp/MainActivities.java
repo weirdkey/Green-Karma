@@ -30,24 +30,24 @@ public abstract class MainActivities extends AppCompatActivity {
             "Octopus", "Pig", "Sheep", "Rabbit", "Snake", "Spider"};
 
     protected String[] infoArray = {
-            "8 tentacled monster",
-            "Delicious in rolls",
-            "Great for jumpers",
-            "Nice in a stew",
-            "Great for shoes",
-            "Scary.",
-            "8 tentacled monster",
-            "Delicious in rolls",
-            "Great for jumpers",
-            "Nice in a stew",
-            "Great for shoes",
-            "Scary.",
-            "8 tentacled monster",
-            "Delicious in rolls",
-            "Great for jumpers",
-            "Nice in a stew",
-            "Great for shoes",
-            "Scary."
+            "  Karma: 220  ",
+            "  Karma: 198  ",
+            "  Karma: 195  ",
+            "  Karma: 170  ",
+            "  Karma: 170  ",
+            "  Karma: 160  ",
+            "  Karma: 155  ",
+            "  Karma: 152  ",
+            "  Karma: 150  ",
+            "  Karma: 145  ",
+            "  Karma: 140  ",
+            "  Karma: 120  ",
+            "  Karma: 100  ",
+            "  Karma: 100  ",
+            "  Karma: 97  ",
+            "  Karma: 95  ",
+            "  Karma: 92  ",
+            "  Karma: 82  "
     };
 
     protected Integer[] imageArray = {
@@ -97,7 +97,6 @@ public abstract class MainActivities extends AppCompatActivity {
             CustomListAdapter cla = new CustomListAdapter(this, nameArray, infoArray, imageArray);
             listView = (ListView) findViewById(R.id.activity_leadeboard);
             listView.setAdapter(cla);
-
         }
     }
 
