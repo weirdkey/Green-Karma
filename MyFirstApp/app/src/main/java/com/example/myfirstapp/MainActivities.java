@@ -53,23 +53,23 @@ public abstract class MainActivities extends AppCompatActivity {
 
     protected Integer[] imageArray = {
             R.drawable.avatar,
+            R.drawable.woman,
+            R.drawable.avatar,
+            R.drawable.woman,
+            R.drawable.avatar,
+            R.drawable.woman,
+            R.drawable.avatar,
+            R.drawable.avatar,
+            R.drawable.woman,
+            R.drawable.avatar,
+            R.drawable.woman,
             R.drawable.avatar,
             R.drawable.avatar,
             R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar,
-            R.drawable.avatar};
+            R.drawable.woman,
+            R.drawable.woman,
+            R.drawable.woman,
+            R.drawable.woman};
 
     abstract int getLayoutId();
 
