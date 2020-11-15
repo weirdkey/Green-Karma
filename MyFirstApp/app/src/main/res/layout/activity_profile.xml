@@ -53,12 +53,14 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@+id/profile_picture"
-                app:fontFamily="@font/bungee"
+                android:fontFamily="sans-serif"
                 android:includeFontPadding="false"
+                android:shadowColor="#e3e3e3"
                 android:text="Julian Kranz"
                 android:textColor="#000"
                 android:textSize="20sp"
-                android:typeface="normal" />
+                android:textStyle="bold"
+                android:typeface="serif" />
 
             <TextView
                 android:id="@+id/username_field"
@@ -68,6 +70,7 @@
                 android:layout_marginLeft="11dp"
                 android:layout_marginTop="-2dp"
                 android:layout_toRightOf="@+id/profile_picture"
+                android:fontFamily="sans-serif"
                 android:includeFontPadding="false"
                 android:text="juliank"
                 android:textSize="14sp"
@@ -143,12 +146,14 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="#3bd16f"
                     android:padding="5dp">
 
                     <TextView
                         android:layout_width="40dp"
                         android:layout_height="30dp"
                         android:layout_centerHorizontal="true"
+                        android:fontFamily="sans-serif"
                         android:text="Daily"
                         android:typeface="serif"></TextView>
 
@@ -157,10 +162,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:fontFamily="@font/bungee"
                         android:includeFontPadding="false"
                         android:text="400"
                         android:textSize="20sp"
+                        android:textStyle="bold"
                         android:typeface="serif" />
 
                     <TextView
@@ -187,12 +192,14 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="#3bd16f"
                     android:padding="5dp">
 
                     <TextView
                         android:layout_width="50dp"
                         android:layout_height="30dp"
                         android:layout_centerHorizontal="true"
+                        android:fontFamily="sans-serif"
                         android:text="Weekly"
                         android:typeface="serif"></TextView>
 
@@ -201,10 +208,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
-                        android:fontFamily="@font/bungee"
                         android:includeFontPadding="false"
                         android:text="2500"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
 
                     <TextView
                         android:id="@+id/weekly_points"
@@ -291,10 +299,11 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:background="#01B636"
-            android:fontFamily="@font/bungee"
             android:padding="20dp"
             android:text="CONNECT VEHICLE"
+            android:textStyle="bold"
             android:typeface="serif"
+            app:backgroundTint="#01B636"
             app:cornerRadius="10dp" />
     </LinearLayout>
 

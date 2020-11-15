@@ -130,7 +130,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="174dp"
         android:gravity="center"
-        android:text="Driving in populated zone"
+        android:text="Driving"
         android:textSize="14sp"
         android:typeface="serif" />
 
@@ -155,7 +155,7 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="174dp"
         android:gravity="center"
-        android:text="5000 steps today"
+        android:text="5000 Steps Today"
         android:textSize="14sp"
         android:typeface="serif" />
 
@@ -167,7 +167,7 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="364dp"
         android:gravity="center"
-        android:text="5000 steps today"
+        android:text="Public Transport"
         android:textSize="14sp"
         android:typeface="serif" />
 
@@ -179,7 +179,7 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="554dp"
         android:gravity="center"
-        android:text="5000 steps today"
+        android:text="Top 3 in Weeky Leaderboard"
         android:textSize="14sp"
         android:typeface="serif" />
 
@@ -205,7 +205,7 @@
         android:layout_marginLeft="270dp"
         android:layout_marginTop="364dp"
         android:gravity="center"
-        android:text="Gaind 300 points for a day"
+        android:text="Hot streak"
         android:textSize="14sp"
         android:typeface="serif" />
 
