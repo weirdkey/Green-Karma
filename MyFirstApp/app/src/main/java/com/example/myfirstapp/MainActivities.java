@@ -3,6 +3,7 @@ package com.example.myfirstapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.ColorFilter;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -83,20 +84,39 @@ public abstract class MainActivities extends AppCompatActivity {
         if (getLayoutId() == R.layout.activity_bottomlayout) {
             resetButtonColors();
             achievement_button.setBackgroundColor(Color.parseColor("#74E39A"));
+
+
             TextView txt = (TextView) findViewById(R.id.rewards_label);
             txt.setPaintFlags(txt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+
+            TextView txt2 = (TextView) findViewById(R.id.rewards_label2);
+            txt2.setOnClickListener(v -> {
+                Intent switchLayout = new Intent(this, ShopActivity.class);
+                startActivity(switchLayout);
+            });
         } else if (getLayoutId() == R.layout.activity_home) {
             resetButtonColors();
             home_button.setBackgroundColor(Color.parseColor("#74E39A"));
         } else if (getLayoutId() == R.layout.activity_profile) {
             resetButtonColors();
             profile_button.setBackgroundColor(Color.parseColor("#74E39A"));
+
         } else if (getLayoutId() == R.layout.activity_leaderboard) {
             resetButtonColors();
             progress_button.setBackgroundColor(Color.parseColor("#74E39A"));
             CustomListAdapter cla = new CustomListAdapter(this, nameArray, infoArray, imageArray);
             listView = (ListView) findViewById(R.id.activity_leadeboard);
             listView.setAdapter(cla);
+        } else if (getLayoutId() == R.layout.activity_shop) {
+            resetButtonColors();
+            achievement_button.setBackgroundColor(Color.parseColor("#74E39A"));
+            TextView txt = (TextView) findViewById(R.id.rewards_label);
+            TextView txt2 = (TextView) findViewById(R.id.rewards_label2);
+            txt2.setPaintFlags(txt.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+            txt.setOnClickListener(v -> {
+                Intent switchLayout = new Intent(this, RewardsActivity.class);
+                startActivity(switchLayout);
+            });
         }
     }
 
