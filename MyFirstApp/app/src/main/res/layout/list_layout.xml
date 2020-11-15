@@ -27,7 +27,8 @@
             android:layout_height="wrap_content"
             android:text="TextView"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:typeface="serif" />
 
         <TextView
             android:id="@+id/infoTextID"
@@ -35,7 +36,8 @@
             android:layout_height="wrap_content"
             android:gravity="right"
             android:text="TextView"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:typeface="serif" />
     </LinearLayout>
 
 </LinearLayout>
