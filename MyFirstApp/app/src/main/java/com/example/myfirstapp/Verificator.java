@@ -1,7 +1,7 @@
 package com.example.myfirstapp;
 
 public class Verificator {
-    private final static String USERNAME = "juliankranz";
+    private final static String USERNAME = "julian.kranz@gmail.com";
     private final static String PASSWORD = "jk";
 
     public static boolean verificate(CharSequence username, CharSequence password) {
